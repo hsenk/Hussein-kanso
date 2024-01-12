@@ -34,7 +34,7 @@
 </head>
 <body>
     <header>
-        <h1>Your Website Name</h1>
+        <h1>Hussein Kanso</h1>
     </header>
     
     <main>
@@ -47,8 +47,6 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
+    <footer>    </footer>
 </body>
 </html>
