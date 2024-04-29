@@ -1,52 +1,239 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cedars Commercial Real Estate</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      margin-bottom: 20px; /* Added space */
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffc107;
+    }
+
+    /* Content Styles */
+    section {
+      display: none;
+      background-color: #fff;
+      padding: 40px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 20px; /* Added space */
+      color: #343a40;
+      font-size: 2em;
+    }
+
+    section p {
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    section ul {
+      margin-top: 20px;
+      padding-left: 20px;
+      color: #555;
+    }
+
+    section ul li {
+      margin-bottom: 5px;
+    }
+
+    section form {
+      margin-top: 20px;
+    }
+
+    section form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    section form input,
+    section form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    section form button {
+      padding: 10px 20px;
+      background-color: #ffc107;
+      color: #343a40;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    section form button:hover {
+      background-color: #ff9800;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 20px;
+      border-top: 2px solid #ffc107;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hussein Kanso</h1>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Welcome to Your Website</h2>
-            <p>This is a simple and clean website template.</p>
-        </section>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Cedars Estate</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('properties')">Properties</a></li>
+          <li><a href="#" onclick="showSection('services')">Services</a></li>
+          <li><a href="#" onclick="showSection('about')">About Us</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <!-- Add more sections and content as needed -->
+  <!-- Content Sections -->
+  <section id="properties" class="active">
+    <div class="container">
+      <h2>Explore Our Properties</h2>
+      <p>At Cedars Commercial Real Estate, we offer a diverse range of commercial properties to meet the needs of businesses of all sizes. Whether you're looking for office spaces, retail locations, or industrial warehouses, we have the perfect property for you.</p>
+      <p>Our properties are strategically located in prime areas with high visibility and easy accessibility. Browse through our listings and find the ideal space for your business.</p>
+      <ul>
+        <li>Office Spaces</li>
+        <li>Retail Stores</li>
+        <li>Industrial Warehouses</li>
+        <li>Commercial Land</li>
+      </ul>
+    </div>
+  </section>
 
-    </main>
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>At Cedars Commercial Real Estate, we provide comprehensive services to support our clients throughout their commercial real estate journey. Our dedicated team offers:</p>
+      <ul>
+        <li>Property Leasing and Sales</li>
+        <li>Investment Analysis</li>
+        <li>Portfolio Management</li>
+        <li>Property Marketing</li>
+        <li>Tenant Representation</li>
+        <li>Market Research</li>
+        <li>Property Management</li>
+      </ul>
+      <p>Whether you're a landlord, investor, or tenant, we are committed to delivering exceptional service and achieving successful outcomes for all our clients.</p>
+    </div>
+  </section>
 
-    <footer>    </footer>
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Cedars Commercial Real Estate is a trusted name in the commercial real estate industry, serving clients across the region with integrity and professionalism. With years of experience and a deep understanding of the market, our team is dedicated to helping clients achieve their real estate goals.</p>
+      <p>At Cedars, we believe in building long-lasting relationships with our clients based on trust, transparency, and mutual respect. Our mission is to provide personalized service and tailored solutions to meet the unique needs of each client.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or ready to get started? Contact us today!</p>
+      <p>Phone: +961 78805600</p>
+      <p>Email: estatecedars@outlook.com</p>
+      <p>Address: laylake, beside al mahdi school</p>
+      <p>Or fill out the form below and we'll get back to you:</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Cedars Commercial Real Estate</p>
+    </div>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Show the selected section
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
 </body>
 </html>
