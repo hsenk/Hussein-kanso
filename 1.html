@@ -205,7 +205,7 @@
       <p>Email: estatecedars@outlook.com</p>
       <p>Address: Beirut</p>
       <p>Or fill out the form below and we'll get back to you:</p>
-      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+      <form action="submit_form.php" method="post">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
         <label for="email">Email:</label><br>
@@ -213,30 +213,7 @@
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="4" required></textarea><br>
         <button type="submit">Send Message</button>
-      </form>
-      <?php
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-          // Collect form data
-          $name = $_POST["name"];
-          $email = $_POST["email"];
-          $message = $_POST["message"];
-
-          // Compose email message
-          $to = "estatecedars@outlook.com"; // Replace with your email address
-          $subject = "New message from Cedars Commercial Real Estate website";
-          $body = "Name: $name\nEmail: $email\n\n$message";
-
-          // Send email
-          if (mail($to, $subject, $body)) {
-              echo "<p>Your message has been sent successfully!</p>";
-          } else {
-              echo "<p>Sorry, there was an error sending your message.</p>";
-          }
-      }
-      ?>
-    </div>
-  </section>
-
+</form>
   <!-- Footer -->
   <footer>
     <div class="container">
