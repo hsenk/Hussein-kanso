@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Compose email message
-    $to = "your@email.com"; // Replace with your email address
-    $subject = "New message from Cedars Commercial Real Estate website";
+    $to = "estatecedars@outlook.com"; // Replace with your email address
+    $subject = "New message for Cedars Commercial Real Estate website";
     $body = "Name: $name\nEmail: $email\n\n$message";
 
     // Send email
